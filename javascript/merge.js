@@ -4,9 +4,8 @@ function merge(a) {
 }
 
 function _merge(a, l, n) {
-	if(n <= 1) {
-		return
-	}
+	if(n <= 1)
+		return;
 	var m = Math.floor(n/2)
 	_merge(a, l, m)
 	_merge(a, l+m, n-m)

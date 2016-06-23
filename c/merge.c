@@ -1,8 +1,7 @@
 // merge implements merge sort algorithm. The function takes an array and its length.
 void merge(int a[], int n) {
-	if(n <= 1) {
+	if(n <= 1)
 		return;
-	}
 	int m = n/2;
 	merge(a, m);
 	merge(a+m, n-m);

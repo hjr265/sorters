@@ -5,9 +5,8 @@ using namespace std;
 
 // quick3 implements quick sort (3 way) algorithm. The function takes an array and its length.
 void quick3(int a[], int n) {
-	if(n <= 1) {
+	if(n <= 1)
 		return;
-	}
 	swap(a[n-1], a[(int)(rand())%n]);
 	int i = 0, k = 0, p = n;
 	while(i < p) {

@@ -6,9 +6,8 @@ function quick3(a) {
 }
 
 function _quick3(a, l, n) {
-	if(n <= 1) {
-		return
-	}
+	if(n <= 1)
+		return;
 	swap(a, l+n-1, l+Math.floor(Math.random()*n))
 	var i = l, k = l, p = l+n
 	while(i < p) {

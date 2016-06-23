@@ -6,9 +6,8 @@ function quick(a) {
 }
 
 function _quick(a, l, n) {
-	if(n <= 1) {
-		return
-	}
+	if(n <= 1)
+		return;
 	swap(a, l, l+Math.floor(Math.random()*n))
 	var k = l;
 	for(var i = l+1; i < l+n; i++) {
